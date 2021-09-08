@@ -13,6 +13,10 @@ const routes = [
   {
     path: '/pages/:id',
     component: () => import('../pages/MemoryDetailsPage.vue')
+  },
+  {
+    path: '/pages/AddImagePage',
+  component: () => import('../pages/AddImagePage.vue')
   }
 ]
 

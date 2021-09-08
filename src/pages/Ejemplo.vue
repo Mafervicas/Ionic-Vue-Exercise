@@ -1,6 +1,13 @@
 
 <template>
     <base-layout page-title="Countries to Travel">
+        <template v-slot:actions-end>
+            <ion-button>
+                <ion-icon slot="icon-only"
+                :icon="add"></ion-icon>
+            </ion-button>
+        </template>
+       
         <h2>Hello world, I´m just playing</h2>
         <h3>This is my top 10 </h3>
         <br/>
@@ -12,12 +19,18 @@
 </template>
 
 <script>
-
+import{ IonButton, IonIcon } from '@ionic/vue';
+import {add} from 'ionicons/icons';
 import PagesList from '../components/base/memories/PagesList.vue';
 
 export default{
     components:{
-        PagesList
+        PagesList,
+        IonButton,
+        IonIcon
+    },
+    data(){
+        return {add};
     },
     computed: {
         pages(){
