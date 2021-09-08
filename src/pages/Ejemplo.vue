@@ -1,45 +1,23 @@
 
 <template>
-    <base-layout page-title="Vista 1">
-        <h2>Hello world</h2>
-        <h3>I´m just playing</h3>
+    <base-layout page-title="Countries to Travel">
+        <h2>Hello world, I´m just playing</h2>
+        <h3>This is my top 10 </h3>
+        <br/>
+        <pages-list :pages="pages"></pages-list>
 
-        <ion-list>
-            <ion-item v-for="page in pages" :router-link="`/pages/${page.id}`" :key="page.id">
-
-                <ion-thumbnail>
-                    <slot one="start">
-                        <ion-img :src="page.image" :alt="page.title">
-                        </ion-img>
-                    </slot>
-                </ion-thumbnail>
-                <ion-label>
-                    {{page.title}}
-                </ion-label>
-            </ion-item>
-        </ion-list>
+       
 
     </base-layout>
 </template>
 
 <script>
 
-import {
-    IonList,
-    IonItem,
-    IonImg, 
-    IonThumbnail,
-    IonLabel
-    } from '@ionic/vue';
-
+import PagesList from '../components/base/memories/PagesList.vue';
 
 export default{
     components:{
-        IonList,
-        IonItem,
-        IonImg,
-        IonThumbnail,
-        IonLabel
+        PagesList
     },
     computed: {
         pages(){
@@ -52,7 +30,7 @@ export default{
 </script>
 
 <style scoped>
-ion-title{
+h2, h3{
     text-align: center;
 }
 </style>
