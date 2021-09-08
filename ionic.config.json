@@ -1,0 +1,7 @@
+{
+  "name": "QR_Code",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}

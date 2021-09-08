@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "QR_Code",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}
