@@ -21,7 +21,7 @@ const store = createStore({
                 },
                 { id: "m4", 
                 image:"https://www.costacruceros.com/content/dam/costa/inventory-assets/countries/FIN/FIN.jpg.image.750.563.low.jpg",
-                title: "This is view 1",
+                title: "This is view 4",
                 description: "I don´t know what I´m doing",
                 },
             ],
